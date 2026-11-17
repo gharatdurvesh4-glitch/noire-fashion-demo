@@ -1,0 +1,53 @@
+NOIRE — ANDROID + GITHUB PAGES UPLOAD GUIDE
+
+PART A — EXTRACT THE PACKAGE
+1. Download NOIRE_GITHUB_UPLOAD_PACKAGE.zip.
+2. Open your Android File Manager.
+3. Open Downloads.
+4. Tap the ZIP and choose Extract.
+5. Open the extracted NOIRE_GITHUB_UPLOAD folder.
+6. Confirm you can see index.html, style.css, script.js and README.md.
+
+PART B — UPLOAD TO GITHUB
+1. Open Chrome and visit github.com.
+2. Sign in and open your noire-fashion-demo repository.
+3. If the mobile page is difficult to use, open Chrome's three-dot menu and turn on Desktop site.
+4. Open the Code tab.
+5. Choose Add file, then Upload files.
+6. In the Android file picker, navigate to Downloads/NOIRE_GITHUB_UPLOAD.
+7. Select index.html, style.css, script.js and README.md.
+   - If your file picker allows only one file at a time, repeat the upload process for each file, or use its multi-select option.
+8. Check that all four filenames appear in GitHub's upload list.
+9. Scroll to Commit changes.
+10. Enter: Upload NOIRE fashion website
+11. Tap Commit changes.
+
+PART C — ENABLE GITHUB PAGES
+1. In the repository, open Settings.
+2. Open Pages.
+3. Under Build and deployment, select Deploy from a branch.
+4. Select branch: main.
+5. Select folder: /(root).
+6. Tap Save.
+7. Wait for publishing to complete.
+8. Refresh Settings > Pages and open the published URL shown there.
+
+PART D — CHECK THE LIVE WEBSITE
+1. Open the published URL.
+2. Check that the homepage image appears.
+3. Scroll to the product cards.
+4. Open a product and choose a size.
+5. Add it to the bag.
+6. Test the wishlist.
+7. Refresh and check whether the bag/wishlist remain saved in the same browser.
+
+TROUBLESHOOTING
+- Blank or 404 page: confirm index.html is in the repository root and named exactly index.html.
+- No styling: confirm style.css is in the same root folder and the filename has the same spelling/capitalization.
+- Buttons do not work: confirm script.js is in the same root folder and uploaded correctly.
+- Images missing: check your internet connection; the demo uses remote image URLs.
+- Changes not visible: wait briefly, refresh the live page, and if needed clear the browser's cached page.
+- Never upload the ZIP as a substitute for the extracted website files.
+
+SAFETY
+The repository is public, so its code can be viewed by anyone. Never upload passwords, API keys, private customer details or sensitive information.

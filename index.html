@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>NOIRÉ — Contemporary Fashion</title>
+  <meta name="description" content="NOIRÉ premium fashion store student portfolio demo.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">COMPLIMENTARY SHIPPING ON DEMO ORDERS OVER ₹2,500</div>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="Noiré home">NOIRÉ<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#collection">Collection</a><a href="#story">Our story</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="wishlist-button" id="openWishlist" aria-label="Open wishlist">♡ <span id="wishlistCount">0</span></button>
+      <button class="cart-button" id="openCart" aria-label="Open shopping bag">BAG <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW SEASON / 2026</p>
+        <h1>Wear your<br><em>own story.</em></h1>
+        <p class="hero-text">Considered essentials. Confident silhouettes. A quieter kind of statement.</p>
+        <a class="button button-light" href="#collection">Explore collection <span>↗</span></a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Editorial photograph of a black fashion jacket">
+        <div class="image-caption"><span>01 / 04</span><span>FORM. FEELING. FREEDOM.</span></div>
+      </div>
+      <div class="hero-side-note">INDEPENDENT STYLE — EST. 2026</div>
+    </section>
+
+    <section class="ticker" aria-label="Brand values"><span>LESS, BUT BETTER</span><b>✳</b><span>MADE TO MOVE</span><b>✳</b><span>EVERYDAY ICONS</span><b>✳</b><span>LESS, BUT BETTER</span></section>
+
+    <section class="collection section-wrap" id="collection">
+      <div class="section-head">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Latest <em>edits.</em></h2></div>
+        <p class="muted">A small selection of versatile pieces<br>for wherever the day takes you.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="All">All pieces</button>
+        <button class="filter" data-filter="Clothing">Clothing</button>
+        <button class="filter" data-filter="Accessories">Accessories</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-image" role="img" aria-label="Minimal fashion editorial still life"></div>
+      <div class="story-copy"><p class="eyebrow">A NOTE ON NOIRÉ</p><h2>Style is not<br>about <em>more.</em></h2><p>It is about choosing pieces that feel like you. NOIRÉ is a fictional fashion-store concept built around thoughtful design, easy styling and pieces made to be worn your way.</p><a href="#contact" class="text-link">Get in touch <span>↗</span></a></div>
+    </section>
+
+    <section class="newsletter section-wrap" id="contact">
+      <p class="eyebrow">STAY IN THE LOOP</p><h2>A little note<br>from <em>NOIRÉ.</em></h2>
+      <p class="muted">Join the demo mailing list to see the form interaction. No email is sent or stored on a server.</p>
+      <form id="newsletterForm" class="newsletter-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required><button class="button button-light" type="submit">Join list ↗</button></form>
+      <p id="formMessage" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo" href="#home">NOIRÉ<span>.</span></a><p>FASHION, WITHOUT THE NOISE.</p><p>© 2026 NOIRÉ — STUDENT PORTFOLIO DEMO</p></footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer side-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Shopping bag</h2></div><button id="closeCart" class="close-button" aria-label="Close shopping bag">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="muted">Your bag is currently empty.</p></div>
+    <div class="drawer-bottom"><div class="total-row"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><p class="muted tiny">Demo only. No payment is collected.</p><button class="button button-light full" id="checkoutBtn">Continue (demo)</button></div>
+  </aside>
+
+  <aside class="wishlist-drawer side-drawer" id="wishlistDrawer" aria-label="Wishlist" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SAVED PIECES</p><h2>Wishlist</h2></div><button id="closeWishlist" class="close-button" aria-label="Close wishlist">×</button></div>
+    <div id="wishlistItems" class="cart-items"><p class="muted">No saved pieces yet.</p></div>
+    <div class="drawer-bottom"><p class="muted tiny">Your wishlist is saved on this device.</p></div>
+  </aside>
+
+  <section class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProductName" aria-hidden="true">
+    <button class="modal-close" id="closeProductModal" aria-label="Close product details">×</button>
+    <div class="modal-content" id="modalContent"></div>
+  </section>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
